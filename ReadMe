@@ -1,0 +1,38 @@
+First Time Install
+
+1) Download and Install PyCharm Community Edition
+https://www.jetbrains.com/pycharm/download/?section=windows
+
+2) Get from VCS (versioning control system)
+
+3) click on Download and Install option shown for Git
+
+4) Enter this URL - https://github.com/jiteshkumar23/pythonProject
+
+5) Clone and Trust Project
+
+6) Open Corbett.py under Python Scripts
+7) Configure Python Interpreter --> Add new interpreter -->Add local Interpreter
+8) OK
+9) This will install Python 3.12.3 in the system
+10) Error will go away
+11) Go to Terminal and run following command
+pip install keyboard, autoit, pyautoit, pyautogui, opencv-python, Pillow
+
+12)Install Shortkeys in Chrome and import the code from ShortKeys COde file in this project
+https://chromewebstore.google.com/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck?pli=1
+
+
+For Daily Use :
+
+1) Room shortcuts in room_shortcuts.py should match with ShortKeys plugin
+Make sure the room you want to book (in the config file) is available with same name in room_shortcuts.py and has same
+shortcut in file and plugin
+
+2) Convert the checkout and checkin date to milliseconds using GetCheckinCheckOutTime.py file
+
+3) Place the mills in plugin and save. Refresh the site for changes to take effect in the plugin/site.
+
+4) Fill data in config.py file
+
+5) Run the Corbett.py file

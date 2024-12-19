@@ -1,0 +1,170 @@
+[
+  {
+    "key": "alt+q",
+    "action": "javascript",
+    "label": "phase1radio",
+    "blacklist": false,
+    "activeInInputs": true,
+    "code": "document.querySelector(\"[id*='monument'][value='1']\").click();",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "12553797-dea6-435e-b2b5-b564bae0e872"
+  },
+  {
+    "key": "alt+w",
+    "action": "javascript",
+    "label": "phase2radio",
+    "blacklist": false,
+    "activeInInputs": true,
+    "code": "document.querySelector(\"[id*='monument'][value='3']\").click();",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "f2a7cd81-7eaf-49d0-9c60-7f31b0d83dcb"
+  },
+  {
+    "key": "alt+t",
+    "label": "DateSelection",
+    "action": "javascript",
+    "activeInInputs": true,
+    "blacklist": false,
+    "code": "// Function to get milliseconds for the next day in IST\nfunction getNextDayMillisIST() {\n    // Get the current date and time\n    var currentDate = new Date();\n\n    // Create a new date object for the next day at midnight (00:00:00)\n    var nextDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 1, 0, 0, 0);\n\n    // Convert the date to UTC and adjust for IST timezone offset (UTC+5:30)\n    var utcNextDate = new Date(nextDate.toUTCString());\n    var millisNextDateIST = utcNextDate.getTime() + (5.5 * 60 * 60 * 1000);\n\n    return millisNextDateIST;\n}\n\n// Get milliseconds for the next day in IST\nvar nextDayMillis = getNextDayMillisIST();\n\n// Print the calculated milliseconds to the console\nconsole.log(\"Milliseconds for the next day in IST: \" + nextDayMillis);\n\n// Generate the query selector dynamically\nvar querySelector = \"[data-date='\" + nextDayMillis + \"']\";\n\n// Execute the click action on the dynamically generated selector\ndocument.querySelector(querySelector).click();",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "00a5c031-75e5-4cc6-bfaf-0e8db0da97ca"
+  },
+  {
+    "key": "alt+y",
+    "label": "Slot1",
+    "action": "javascript",
+    "activeInInputs": true,
+    "blacklist": false,
+    "code": "// Function to select an option containing specific text\nfunction selectOptionContainingText(selectElement, keyword) {\n    for (var i = 0; i < selectElement.options.length; i++) {\n        if (selectElement.options[i].text.includes(keyword)) {\n            selectElement.selectedIndex = i;\n            break;\n        }\n    }\n}\n\n// Get the select element\nvar selectElement = document.querySelector(\".selectTimeSlot\");\n\n// Keyword to search for in the options\nvar keyword = \"Slot 1\";\n\n// Select the option containing the keyword\nselectOptionContainingText(selectElement, keyword);\n\n// Trigger a change event if needed\nvar event = new Event('change', { bubbles: true });\nselectElement.dispatchEvent(event);\n\nconsole.log(\"Option containing '\" + keyword + \"' selected: \" + selectElement.options[selectElement.selectedIndex].text);",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "6ba1e7fa-3738-4218-be79-21caa64a4f5f"
+  },
+  {
+    "key": "alt+u",
+    "label": "Slot2",
+    "action": "javascript",
+    "activeInInputs": true,
+    "blacklist": false,
+    "code": "// Function to select an option containing specific text\nfunction selectOptionContainingText(selectElement, keyword) {\n    for (var i = 0; i < selectElement.options.length; i++) {\n        if (selectElement.options[i].text.includes(keyword)) {\n            selectElement.selectedIndex = i;\n            break;\n        }\n    }\n}\n\n// Get the select element\nvar selectElement = document.querySelector(\".selectTimeSlot\");\n\n// Keyword to search for in the options\nvar keyword = \"Slot 2\";\n\n// Select the option containing the keyword\nselectOptionContainingText(selectElement, keyword);\n\n// Trigger a change event if needed\nvar event = new Event('change', { bubbles: true });\nselectElement.dispatchEvent(event);\n\nconsole.log(\"Option containing '\" + keyword + \"' selected: \" + selectElement.options[selectElement.selectedIndex].text);",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "c24ee8fd-e862-45d3-aac9-1881ab0b910e"
+  },
+  {
+    "key": "alt+i",
+    "label": "Slot3",
+    "action": "javascript",
+    "code": "// Function to select an option containing specific text\nfunction selectOptionContainingText(selectElement, keyword) {\n    for (var i = 0; i < selectElement.options.length; i++) {\n        if (selectElement.options[i].text.includes(keyword)) {\n            selectElement.selectedIndex = i;\n            break;\n        }\n    }\n}\n\n// Get the select element\nvar selectElement = document.querySelector(\".selectTimeSlot\");\n\n// Keyword to search for in the options\nvar keyword = \"Slot 3\";\n\n// Select the option containing the keyword\nselectOptionContainingText(selectElement, keyword);\n\n// Trigger a change event if needed\nvar event = new Event('change', { bubbles: true });\nselectElement.dispatchEvent(event);\n\nconsole.log(\"Option containing '\" + keyword + \"' selected: \" + selectElement.options[selectElement.selectedIndex].text);",
+    "activeInInputs": true,
+    "blacklist": false,
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "8f785b23-ad87-4839-9b94-851936bb8d9f"
+  },
+  {
+    "key": "alt+p",
+    "action": "javascript",
+    "code": "document.querySelector(\"[type='button'][value*='Proceed']\").click();",
+    "activeInInputs": true,
+    "blacklist": false,
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "label": "proceed to next button",
+    "id": "8bf76de0-5a0a-47f9-ae18-379f73bd28b7"
+  },
+  {
+    "key": "alt+a",
+    "label": "Indian",
+    "action": "javascript",
+    "code": "document.querySelector(\"input[id='Indian']\").click();",
+    "blacklist": false,
+    "activeInInputs": true,
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "8f772e5d-6af5-4f4e-91fc-507ef7ede794"
+  },
+  {
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "key": "alt+s",
+    "label": "Foreigner",
+    "action": "javascript",
+    "activeInInputs": true,
+    "blacklist": false,
+    "code": "document.querySelector(\"input[id='Foreigner']\").click();",
+    "id": "427aba02-8660-436d-81c6-0d525589085f"
+  },
+  {
+    "key": "alt+d",
+    "label": "Add Visitor Button",
+    "action": "javascript",
+    "code": "// Function to select a button by its text content\nfunction getButtonByText(text) {\n    // Get all button elements on the page\n    var buttons = document.querySelectorAll(\"button\");\n\n    // Iterate through the buttons to find the one with the matching text\n    for (var i = 0; i < buttons.length; i++) {\n        if (buttons[i].textContent.trim() === text) {\n            return buttons[i];\n        }\n    }\n\n    return null;\n}\n\n// Use the function to get the button with text 'Add Visitor'\nvar buttonElement = getButtonByText(\"Add Visitor\");\n\n// Check if the button element exists and click it\nif (buttonElement) {\n    // Log the button text\n    console.log(\"Button text is: \" + buttonElement.textContent);\n\n    // Click the button\n    buttonElement.click();\n\n    // Confirmation log\n    console.log(\"Button clicked.\");\n} else {\n    console.log(\"Button not found.\");\n}",
+    "activeInInputs": true,
+    "blacklist": false,
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "1b002bb9-d598-4636-b1c5-b5ec261b6929"
+  },
+  {
+    "key": "alt+h",
+    "action": "bottom",
+    "label": "Scroll to bottom",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "dbe44158-fe92-421e-bd5d-734aba44d110"
+  },
+  {
+    "key": "alt+j",
+    "label": "Proceed To Pay Button",
+    "action": "javascript",
+    "code": "document.querySelector(\"input[type='button']\").click();",
+    "activeInInputs": true,
+    "blacklist": false,
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "id": "4c8331d5-25c3-4190-8343-e6d91e412234"
+  },
+  {
+    "key": "alt+k",
+    "label": "URL Correction",
+    "action": "gototab",
+    "currentWindow": true,
+    "matchurl": "https://eticket.webfront.in/jkcc/",
+    "openurl": "https://eticket.webfront.in/jkcc/",
+    "blacklist": false,
+    "activeInInputs": true,
+    "id": "a074a9ee-3c0f-42ca-8857-03487ff14c03",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  }
+]
