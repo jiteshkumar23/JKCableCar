@@ -5,7 +5,7 @@ machine = "desktop"
 Route = "Phase 1"
 
 # Select booking type - "Regular" or "Tatkal"
-BookingType = "Regular"
+BookingType = "Tatkal"
 # YEAR - MONTH - DATE
 visitDateForRegularBooking = "2025-02-17"
 
