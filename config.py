@@ -1,5 +1,5 @@
 #Select Machine - "laptop" or "desktop"
-machine = "laptop"
+machine = "desktop"
 
 # Select "Phase 1" or "Phase 2"
 Route = "Phase 1"
@@ -24,16 +24,16 @@ thirdPersonName = "Rocky Malvia Dawson"
 fourthPersonName = "Khabib Nurmagomedov"
 fifthPersonName = "Charles Oliviera"
 
-mobileNumber = "9971185015"
+mobileNumber = "9876987698"
 
-emailAddress = "jitesh_f5@yahoo.co.in"
+emailAddress = "abcd@gmail.com"
 
 # Payment Method -  "creditcard"
 # paymentMethod = "creditcard"
 
 # if paymentMethod is credit card , provide card details
-card_number = "4726428854221312"
-Month = "09"
-Year = "30"
-CVV = "447"
-NameOnCard = "Rajendra"
+card_number = "4726123412341234"
+Month = "11"
+Year = "28"
+CVV = "555"
+NameOnCard = "Cardholder Name"

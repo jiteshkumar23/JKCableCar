@@ -28,4 +28,5 @@ For Daily Use :
 1) Make sure ShortKeys plugin is enabled with correct code.
 2) Browser has this URL open - https://eticket.webfront.in/jkcc/
 3) Fill data in config.py file
-4) Run the JKCableCar.py file
+4) Enter OTP for credit card before running script. Check by clicking on credit card.
+5) Run the JKCableCar.py file
